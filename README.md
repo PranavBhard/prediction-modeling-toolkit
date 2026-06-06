@@ -43,11 +43,18 @@ print(evaluate_predictions(test_outcomes, calibrated))
 ## Examples
 
 ```bash
-python examples/01_calibration_methods.py
+python examples/01_calibration_methods.py   # metrics table + reliability diagram
+python examples/make_gallery.py             # regenerate all gallery charts
 ```
 
 Fits all four calibration methods on a synthetic overconfident classifier
-and renders a reliability diagram comparing them.
+and renders a reliability diagram comparing them:
+
+![Reliability diagram](docs/gallery/calibration_reliability_diagram.png)
+
+More charts (fitted curve shapes, empirical bins, temperature family,
+temporal-split evaluation) in [`docs/gallery/`](docs/gallery/README.md) —
+all generated from synthetic data by the example scripts.
 
 ## Background
 

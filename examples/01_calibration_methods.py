@@ -86,6 +86,6 @@ ax.legend()
 ax.set_aspect("equal")
 fig.tight_layout()
 
-out_path = "docs/gallery/example_calibration.png"
+out_path = "docs/gallery/calibration_reliability_diagram.png"
 fig.savefig(out_path, dpi=150)
 print(f"\nreliability diagram written to {out_path}")
