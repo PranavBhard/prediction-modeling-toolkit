@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prediction-modeling-toolkit"
+version = "0.1.0"
+description = "Calibration, evaluation, ensembling, and stake-sizing infrastructure for probabilistic prediction systems."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "Pranav", email = "pranavbhard@gmail.com" }]
+keywords = ["calibration", "probabilistic-forecasting", "brier-score", "isotonic-regression", "kelly-criterion"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+examples = ["matplotlib>=3.7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pmt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
