@@ -19,6 +19,7 @@ python examples/make_gallery.py
 | `evaluation_temporal_split_raw_vs_calibrated.png` | Brier / log-loss / ECE before and after calibration under a leakage-safe temporal train/calibrate/evaluate split. |
 | `staking_bin_trust_kelly_pipeline.png` | The probability → action pipeline: bin trust weights (raw ROI → shrunk → smoothed) and a sized slate showing trust damping longshot stakes. |
 | `ratings_elo_convergence_carryover.png` | Two simulated seasons of Elo: dynamic-K trajectories with the carryover regression visible at the season boundary, and final ratings recovering latent strength (r ≈ 0.97). |
+| `ensembling_stacking_vs_base_models.png` | Temporal stacking under a 3000/1500/750/750 split: the ensemble beats every base model on the untouched evaluation window. |
 
 ## Dashboard screenshots
 
