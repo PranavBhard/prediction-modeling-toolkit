@@ -70,4 +70,5 @@ for the system overview and the public/private boundary.
 
 ## License
 
-MIT
+All rights reserved — published for demonstration. If you'd like to use
+this code, reach out.

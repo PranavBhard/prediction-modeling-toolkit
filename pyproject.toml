@@ -7,14 +7,12 @@ name = "prediction-modeling-toolkit"
 version = "0.1.0"
 description = "Calibration, evaluation, ensembling, and stake-sizing infrastructure for probabilistic prediction systems."
 readme = "README.md"
-license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [{ name = "Pranav", email = "pranavbhard@gmail.com" }]
 keywords = ["calibration", "probabilistic-forecasting", "brier-score", "isotonic-regression", "kelly-criterion"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
