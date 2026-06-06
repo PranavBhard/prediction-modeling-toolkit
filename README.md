@@ -63,9 +63,10 @@ all generated from synthetic data by the example scripts.
 ## Background
 
 Extracted from the shared infrastructure layer of a private multi-sport
-prediction platform (6 sports, nightly retraining, market execution). The
-feature engineering and model composition stay private; the math and
-machinery are here. See `docs/architecture.md` for the system overview.
+prediction platform (6 sports, daily scoring and calibration, prediction-market
+execution). The feature engineering and model composition stay private; the
+math and machinery are here. See [`docs/architecture.md`](docs/architecture.md)
+for the system overview and the public/private boundary.
 
 ## License
 
