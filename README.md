@@ -36,7 +36,7 @@ print(evaluate_predictions(test_outcomes, calibrated))
 | `pmt.calibration` | Fit calibration curves (isotonic, Platt sigmoid, temperature, beta) as serializable dicts; apply them at prediction time, including per-class multiclass calibration with renormalization. |
 | `pmt.evaluation` | Brier score (binary + multiclass), log-loss, ECE; time-series cross-validation; temporal train/calibrate/evaluate splits that make leakage structurally impossible. |
 | `pmt.staking` | Modified Kelly stake sizing — market-relative skill, probability shrinkage, edge gating — plus empirical bin trust weights learned from realized P&L ([formula walkthrough](docs/stake_sizing.md)). |
-| `pmt.ratings` | *(coming)* Configurable Elo with margin-of-victory scaling. |
+| `pmt.ratings` | Configurable Elo engine: dynamic K schedules, season carryover regression, capped margin-of-victory adjustment, per-team home advantage, Glicko-style rating deviation. |
 | `pmt.ensembling` | *(coming)* Abstract stacking framework with temporal anti-leakage guards. |
 | `pmt.pipeline` | *(coming)* Step-based pipeline orchestration with parallel execution. |
 
@@ -45,6 +45,7 @@ print(evaluate_predictions(test_outcomes, calibrated))
 ```bash
 python examples/01_calibration_methods.py   # metrics table + reliability diagram
 python examples/02_bins_trust_kelly.py      # P&L bins -> trust weights -> Kelly stakes
+python examples/03_elo_season.py            # Elo convergence + season carryover
 python examples/make_gallery.py             # regenerate calibration gallery charts
 ```
 

@@ -18,6 +18,7 @@ python examples/make_gallery.py
 | `calibration_temperature_scaling_family.png` | The temperature-scaling family — how T>1 softens and T<1 sharpens probabilities, with the fitted T highlighted. |
 | `evaluation_temporal_split_raw_vs_calibrated.png` | Brier / log-loss / ECE before and after calibration under a leakage-safe temporal train/calibrate/evaluate split. |
 | `staking_bin_trust_kelly_pipeline.png` | The probability → action pipeline: bin trust weights (raw ROI → shrunk → smoothed) and a sized slate showing trust damping longshot stakes. |
+| `ratings_elo_convergence_carryover.png` | Two simulated seasons of Elo: dynamic-K trajectories with the carryover regression visible at the season boundary, and final ratings recovering latent strength (r ≈ 0.97). |
 
 ## Dashboard screenshots
 
