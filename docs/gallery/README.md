@@ -17,6 +17,7 @@ python examples/make_gallery.py
 | `calibration_empirical_bins_vs_isotonic.png` | Empirical 5%-wide calibration bins (marker area ∝ sample count) with the isotonic fit through them. |
 | `calibration_temperature_scaling_family.png` | The temperature-scaling family — how T>1 softens and T<1 sharpens probabilities, with the fitted T highlighted. |
 | `evaluation_temporal_split_raw_vs_calibrated.png` | Brier / log-loss / ECE before and after calibration under a leakage-safe temporal train/calibrate/evaluate split. |
+| `staking_bin_trust_kelly_pipeline.png` | The probability → action pipeline: bin trust weights (raw ROI → shrunk → smoothed) and a sized slate showing trust damping longshot stakes. |
 
 ## Dashboard screenshots
 
