@@ -38,7 +38,7 @@ print(evaluate_predictions(test_outcomes, calibrated))
 | `pmt.staking` | Modified Kelly stake sizing — market-relative skill, probability shrinkage, edge gating — plus empirical bin trust weights learned from realized P&L ([formula walkthrough](docs/stake_sizing.md)). |
 | `pmt.ratings` | Configurable Elo engine: dynamic K schedules, season carryover regression, capped margin-of-victory adjustment, per-team home advantage, Glicko-style rating deviation. |
 | `pmt.ensembling` | *(coming)* Abstract stacking framework with temporal anti-leakage guards. |
-| `pmt.pipeline` | *(coming)* Step-based pipeline orchestration with parallel execution. |
+| `pmt.pipeline` | Step-based pipeline orchestration (skip conditions, per-step failure policy, observer hooks) plus thread-pool parallelism patterns with progress tracking. |
 
 ## Examples
 
@@ -46,6 +46,7 @@ print(evaluate_predictions(test_outcomes, calibrated))
 python examples/01_calibration_methods.py   # metrics table + reliability diagram
 python examples/02_bins_trust_kelly.py      # P&L bins -> trust weights -> Kelly stakes
 python examples/03_elo_season.py            # Elo convergence + season carryover
+python examples/05_pipeline_demo.py         # orchestration: skip/failure/parallel
 python examples/make_gallery.py             # regenerate calibration gallery charts
 ```
 
