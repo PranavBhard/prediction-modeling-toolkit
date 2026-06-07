@@ -1,5 +1,7 @@
 # prediction-modeling-toolkit
 
+[![CI](https://github.com/PranavBhard/prediction-modeling-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/PranavBhard/prediction-modeling-toolkit/actions/workflows/ci.yml)
+
 Calibration, evaluation, ensembling, and stake-sizing infrastructure for
 probabilistic prediction systems — built for multi-sport game prediction,
 applicable to any probabilistic forecasting problem.
