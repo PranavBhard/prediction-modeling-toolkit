@@ -21,6 +21,18 @@ python examples/make_gallery.py
 | `ratings_elo_convergence_carryover.png` | Two simulated seasons of Elo: dynamic-K trajectories with the carryover regression visible at the season boundary, and final ratings recovering latent strength (r ≈ 0.97). |
 | `ensembling_stacking_vs_base_models.png` | Temporal stacking under a 3000/1500/750/750 split: the ensemble beats every base model on the untouched evaluation window. |
 
+## ParaView renders
+
+3D scientific visualizations rendered in [ParaView](https://www.paraview.org/).
+The underlying data is generated from synthetic inputs by a script in
+`examples/paraview/` (so it stays reproducible and proprietary-free); the
+render itself is produced interactively in the ParaView GUI, then exported
+here.
+
+| Image | What it shows | Data script |
+|---|---|---|
+| `paraview_probability_surface.png` | A 2-feature model's **calibrated win-probability surface** over its full input space. Height and color both map to `P(outcome)` (blue ≈ 0 → white = 0.5 decision boundary → red ≈ 1). The saddle curvature is an interaction term between the two features; the white ridge is the model's coin-flip frontier. Pipeline: CSV → Table To Points → Delaunay 2D → Warp By Scalar → Contour. | `examples/paraview/make_probability_surface_csv.py` |
+
 ## Dashboard screenshots
 
 Screenshots of the private multi-sport prediction platform's web dashboards
